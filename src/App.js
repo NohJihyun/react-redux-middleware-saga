@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+// import CounterContainer from "./containers/CounterContainer";
 
-function App() {
+// function App() {
+//   return (
+//     <div>
+//       <CounterContainer />
+//     </div>
+//   );
+// }
+// export default App;
+
+//494
+//import SampleContainers from "./containers/SampleContainers";
+//508 미들웨어saga를 적용한후 렌더링테스트 counter
+//import CounterContainer from "./containers/CounterContainer";
+//514 미들웨워saga를 적용한후 렌더링 테스트 sample
+//import SampleContainers from "./containers/SampleContainers";
+import CounterContainer from "./containers/CounterContainer";
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {/* <SampleContainers /> */}
+      <CounterContainer />
     </div>
   );
-}
+};
 
 export default App;
